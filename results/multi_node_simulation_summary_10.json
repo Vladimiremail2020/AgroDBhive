@@ -1,0 +1,94 @@
+{
+  "n_nodes": 6,
+  "rows_per_node": 720,
+  "total_rows": 4320,
+  "seed": 100,
+  "bit_layout": [
+    {
+      "name": "soil_moisture",
+      "bits": 10,
+      "scale": 10.0,
+      "min_val": 0.0,
+      "max_val": 100.0
+    },
+    {
+      "name": "air_temp",
+      "bits": 11,
+      "scale": 10.0,
+      "min_val": -40.0,
+      "max_val": 85.0
+    },
+    {
+      "name": "air_humidity",
+      "bits": 10,
+      "scale": 10.0,
+      "min_val": 0.0,
+      "max_val": 100.0
+    },
+    {
+      "name": "pressure",
+      "bits": 14,
+      "scale": 10.0,
+      "min_val": 300.0,
+      "max_val": 1100.0
+    },
+    {
+      "name": "light_lux",
+      "bits": 19,
+      "scale": 1.0,
+      "min_val": 0.0,
+      "max_val": 200000.0
+    }
+  ],
+  "total_bits": 64,
+  "original_chain_valid": true,
+  "tampered_chain_valid": false,
+  "alarm_counts": [
+    {
+      "node_id": 1,
+      "alarm_count": 0
+    },
+    {
+      "node_id": 2,
+      "alarm_count": 0
+    },
+    {
+      "node_id": 3,
+      "alarm_count": 0
+    },
+    {
+      "node_id": 4,
+      "alarm_count": 49
+    },
+    {
+      "node_id": 5,
+      "alarm_count": 152
+    },
+    {
+      "node_id": 6,
+      "alarm_count": 304
+    }
+  ],
+  "reconstruction_mae": [
+    {
+      "field": "soil_moisture",
+      "mae": 0.04757137967583554
+    },
+    {
+      "field": "air_temp",
+      "mae": 0.030691142012318658
+    },
+    {
+      "field": "air_humidity",
+      "mae": 0.04934611027327087
+    },
+    {
+      "field": "pressure",
+      "mae": 0.024405036679482007
+    },
+    {
+      "field": "light_lux",
+      "mae": 0.19129086871371823
+    }
+  ]
+}
