@@ -71,3 +71,64 @@ $$q = \lfloor z (2^b - 1) \rfloor$$
 
 
 The reported Simulation 1 MAE values are aggregated over 10 independent runs using seeds 0–200. Seed 42 is provided as a deterministic single-run reproduction example.
+
+
+
+
+## Quantization and Reconstruction
+
+Each simulated sensor variable is represented using a predefined physical range and a fixed bit width. The value is first normalized to the interval [0, 1] and then quantized using floor-based fixed-width quantization.
+
+For a sensor value `x` with minimum and maximum values `x_min` and `x_max`, and a bit width `b`, the normalized value is:
+
+$$
+z = \frac{x-x_{\min}}{x_{\max}-x_{\min}}
+$$
+
+The quantized integer representation is calculated as:
+
+$$
+q = \left\lfloor z(2^b-1) \right\rfloor
+$$
+
+where `q` is the resulting integer code and `b` is the number of allocated bits.
+
+The corresponding reconstructed value is obtained by inverse normalization:
+
+$$
+\hat{x}
+=
+x_{\min}
++
+\frac{q}{2^b-1}
+(x_{\max}-x_{\min})
+$$
+
+The nominal quantization interval is:
+
+$$
+\Delta =
+\frac{x_{\max}-x_{\min}}
+{2^b-1}
+$$
+
+Reconstruction fidelity is evaluated using the Mean Absolute Error (MAE):
+
+$$
+MAE =
+\frac{1}{N}
+\sum_{i=1}^{N}
+\left|x_i-\hat{x}_i\right|
+$$
+
+where `x_i` is the original simulated value and `x_hat_i` is the reconstructed value after quantization and unpacking.
+
+The reported MAE therefore measures the numerical reconstruction error introduced by the fixed-width representation. It does not represent the absolute measurement accuracy of a physical sensor.
+
+For the implemented floor-based quantizer, the reconstruction error of an individual value is bounded by the corresponding quantization interval:
+
+$$
+0 \leq |x_i-\hat{x}_i| < \Delta
+$$
+
+The reported Simulation 1 results evaluate whether this bound is maintained across all simulated sensor variables and independent simulation runs.
