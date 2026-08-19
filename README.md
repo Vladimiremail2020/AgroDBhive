@@ -50,3 +50,10 @@ Each run produces:
 ## Multi-Run Validation
 
 The repository includes repeated simulation runs across multiple independent random seeds to assess robustness of reconstruction accuracy, irrigation-alert behavior, and tamper detection reliability.
+
+**Quantization:** Each sensor value is min–max normalized to its predefined range and mapped to an integer using fixed-width floor quantization:
+
+$$q = \lfloor z (2^b - 1) \rfloor$$
+
+**Reconstruction** is performed by inverse normalization, and numerical fidelity is evaluated using $\text{MAE}$.
+
