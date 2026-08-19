@@ -70,4 +70,4 @@ $$q = \lfloor z (2^b - 1) \rfloor$$
 | Light | 19 | 0.38147 lux | 0.1918 lux |
 
 
-The reported Simulation 1 MAE values are aggregated over 10 independent runs using seeds 42–100. Seed 42 is provided as a deterministic single-run reproduction example.
+The reported Simulation 1 MAE values are aggregated over 10 independent runs using seeds 0–200. Seed 42 is provided as a deterministic single-run reproduction example.
