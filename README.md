@@ -61,12 +61,13 @@ $$q = \lfloor z (2^b - 1) \rfloor$$
 
 ### Reported Simulation 1 Results
 
-| Variable | Bits | Quantization interval ($\Delta$) | Mean MAE |
+| Variable | Bits | Quantization interval (Δ) | Mean MAE |
 | :--- | :---: | :---: | :---: |
 | Soil moisture | 10 | 0.09775 % | 0.0487 % |
-| Air temperature | 11 | 0.06106 $^{\circ}$C | 0.0305 $^{\circ}$C |
+| Air temperature | 11 | 0.06106 °C | 0.0305 °C |
 | Humidity | 10 | 0.09775 %RH | 0.0492 %RH |
 | Pressure | 14 | 0.04883 mbar | 0.0245 mbar |
 | Light | 19 | 0.38147 lux | 0.1918 lux |
 
 
+The reported Simulation 1 MAE values are aggregated over 10 independent runs using seeds 42–100. Seed 42 is provided as a deterministic single-run reproduction example.
