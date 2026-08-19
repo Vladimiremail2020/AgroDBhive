@@ -57,3 +57,16 @@ $$q = \lfloor z (2^b - 1) \rfloor$$
 
 **Reconstruction** is performed by inverse normalization, and numerical fidelity is evaluated using $\text{MAE}$.
 
+
+
+### Reported Simulation 1 Results
+
+| Variable | Bits | Quantization interval ($\Delta$) | Mean MAE |
+| :--- | :---: | :---: | :---: |
+| Soil moisture | 10 | 0.09775 % | 0.0487 % |
+| Air temperature | 11 | 0.06106 $^{\circ}$C | 0.0305 $^{\circ}$C |
+| Humidity | 10 | 0.09775 %RH | 0.0492 %RH |
+| Pressure | 14 | 0.04883 mbar | 0.0245 mbar |
+| Light | 19 | 0.38147 lux | 0.1918 lux |
+
+
