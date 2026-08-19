@@ -111,6 +111,10 @@ def pack_sensor_data(reading):
 
         # Quantize to n bits
         max_int = (1 << bits) - 1
+
+        # Floor-based fixed-width quantization.
+        # The normalized sensor value is mapped to the integer range
+        # [0, 2^bits - 1] using floor/truncation.
         quantized = int(normalized * max_int)
 
         # Pack into 64-bit integer
