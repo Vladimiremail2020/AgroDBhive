@@ -1,0 +1,375 @@
+
+################################################################
+# AGRODBHIVE V2.2 CORRECTED FORENSIC READ-ONLY DECODER        #
+################################################################
+
+READ-ONLY MODE.
+NO Wi-Fi.
+NO HTTP.
+NO TELEMETRY.
+NO LittleFS writes.
+NO LittleFS erase/format.
+
+[OK] LittleFS mounted READ-ONLY by this sketch.
+
+============================================================
+ OFFLINE JOURNAL STATE — READ ONLY
+============================================================
+[STATE] File size: 32 bytes
+[STATE] Magic            : 0x4F465332
+[STATE] Version          : 1
+[STATE] Active           : 1
+[STATE] Event ID         : 18
+[STATE] Start timestamp  : 1787275201
+[STATE] Start UTC        : 2026-08-21T01:20:01Z
+[STATE] Generated count  : 1
+[STATE] Stored checksum  : 0x7C0FAC3B
+[STATE] Calculated       : 0x7C0FAC3B
+[STATE] INTEGRITY        : PASS
+
+============================================================
+ OFFLINE EVENT JOURNAL — CORRECTED CHECKSUM VALIDATION
+============================================================
+[JOURNAL] File size: 952 bytes
+[JOURNAL] Record size: 56 bytes
+[JOURNAL] Complete records: 17
+
+------------------------------------------------------------
+[EVENT] ID                 : 1
+[EVENT] Start epoch        : 1787250084
+[EVENT] Start UTC          : 2026-08-20T18:21:24Z
+[EVENT] End epoch          : 1787250230
+[EVENT] End UTC            : 2026-08-20T18:23:50Z
+[EVENT] Duration           : 146 seconds
+[EVENT] Generated records  : 2
+[EVENT] Stored checksum    : 0x32D31CDC
+[EVENT] Calculated checksum: 0x32D31CDC
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 2
+[EVENT] Start epoch        : 1787251396
+[EVENT] Start UTC          : 2026-08-20T18:43:16Z
+[EVENT] End epoch          : 1787251497
+[EVENT] End UTC            : 2026-08-20T18:44:57Z
+[EVENT] Duration           : 101 seconds
+[EVENT] Generated records  : 2
+[EVENT] Stored checksum    : 0xB47F2C85
+[EVENT] Calculated checksum: 0xB47F2C85
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 3
+[EVENT] Start epoch        : 1787251579
+[EVENT] Start UTC          : 2026-08-20T18:46:19Z
+[EVENT] End epoch          : 1787255050
+[EVENT] End UTC            : 2026-08-20T19:44:10Z
+[EVENT] Duration           : 3471 seconds
+[EVENT] Generated records  : 72
+[EVENT] Stored checksum    : 0x1CB048AA
+[EVENT] Calculated checksum: 0x1CB048AA
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 4
+[EVENT] Start epoch        : 1787255512
+[EVENT] Start UTC          : 2026-08-20T19:51:52Z
+[EVENT] End epoch          : 1787255558
+[EVENT] End UTC            : 2026-08-20T19:52:38Z
+[EVENT] Duration           : 46 seconds
+[EVENT] Generated records  : 1
+[EVENT] Stored checksum    : 0xA147E7A4
+[EVENT] Calculated checksum: 0xA147E7A4
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 5
+[EVENT] Start epoch        : 1787255989
+[EVENT] Start UTC          : 2026-08-20T19:59:49Z
+[EVENT] End epoch          : 1787257544
+[EVENT] End UTC            : 2026-08-20T20:25:44Z
+[EVENT] Duration           : 1555 seconds
+[EVENT] Generated records  : 13
+[EVENT] Stored checksum    : 0x33E89CFC
+[EVENT] Calculated checksum: 0x33E89CFC
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 6
+[EVENT] Start epoch        : 1787257569
+[EVENT] Start UTC          : 2026-08-20T20:26:09Z
+[EVENT] End epoch          : 1787257768
+[EVENT] End UTC            : 2026-08-20T20:29:28Z
+[EVENT] Duration           : 199 seconds
+[EVENT] Generated records  : 3
+[EVENT] Stored checksum    : 0x8D86A95E
+[EVENT] Calculated checksum: 0x8D86A95E
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 7
+[EVENT] Start epoch        : 1787257842
+[EVENT] Start UTC          : 2026-08-20T20:30:42Z
+[EVENT] End epoch          : 1787258747
+[EVENT] End UTC            : 2026-08-20T20:45:47Z
+[EVENT] Duration           : 905 seconds
+[EVENT] Generated records  : 6
+[EVENT] Stored checksum    : 0xA4488B7A
+[EVENT] Calculated checksum: 0xA4488B7A
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 8
+[EVENT] Start epoch        : 1787258830
+[EVENT] Start UTC          : 2026-08-20T20:47:10Z
+[EVENT] End epoch          : 1787259716
+[EVENT] End UTC            : 2026-08-20T21:01:56Z
+[EVENT] Duration           : 886 seconds
+[EVENT] Generated records  : 12
+[EVENT] Stored checksum    : 0xE9BFEE03
+[EVENT] Calculated checksum: 0xE9BFEE03
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 9
+[EVENT] Start epoch        : 1787259758
+[EVENT] Start UTC          : 2026-08-20T21:02:38Z
+[EVENT] End epoch          : 1787263089
+[EVENT] End UTC            : 2026-08-20T21:58:09Z
+[EVENT] Duration           : 3331 seconds
+[EVENT] Generated records  : 53
+[EVENT] Stored checksum    : 0x63CA1A54
+[EVENT] Calculated checksum: 0x63CA1A54
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 10
+[EVENT] Start epoch        : 1787263163
+[EVENT] Start UTC          : 2026-08-20T21:59:23Z
+[EVENT] End epoch          : 1787264794
+[EVENT] End UTC            : 2026-08-20T22:26:34Z
+[EVENT] Duration           : 1631 seconds
+[EVENT] Generated records  : 22
+[EVENT] Stored checksum    : 0x08D22443
+[EVENT] Calculated checksum: 0x08D22443
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 11
+[EVENT] Start epoch        : 1787264835
+[EVENT] Start UTC          : 2026-08-20T22:27:15Z
+[EVENT] End epoch          : 1787265769
+[EVENT] End UTC            : 2026-08-20T22:42:49Z
+[EVENT] Duration           : 934 seconds
+[EVENT] Generated records  : 7
+[EVENT] Stored checksum    : 0x4AFCF868
+[EVENT] Calculated checksum: 0x4AFCF868
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 12
+[EVENT] Start epoch        : 1787265810
+[EVENT] Start UTC          : 2026-08-20T22:43:30Z
+[EVENT] End epoch          : 1787265909
+[EVENT] End UTC            : 2026-08-20T22:45:09Z
+[EVENT] Duration           : 99 seconds
+[EVENT] Generated records  : 2
+[EVENT] Stored checksum    : 0xCAC09F94
+[EVENT] Calculated checksum: 0xCAC09F94
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 13
+[EVENT] Start epoch        : 1787265988
+[EVENT] Start UTC          : 2026-08-20T22:46:28Z
+[EVENT] End epoch          : 1787266315
+[EVENT] End UTC            : 2026-08-20T22:51:55Z
+[EVENT] Duration           : 327 seconds
+[EVENT] Generated records  : 4
+[EVENT] Stored checksum    : 0x0AC72022
+[EVENT] Calculated checksum: 0x0AC72022
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 14
+[EVENT] Start epoch        : 1787266524
+[EVENT] Start UTC          : 2026-08-20T22:55:24Z
+[EVENT] End epoch          : 1787267268
+[EVENT] End UTC            : 2026-08-20T23:07:48Z
+[EVENT] Duration           : 744 seconds
+[EVENT] Generated records  : 7
+[EVENT] Stored checksum    : 0xAC77EC86
+[EVENT] Calculated checksum: 0xAC77EC86
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 15
+[EVENT] Start epoch        : 1787267311
+[EVENT] Start UTC          : 2026-08-20T23:08:31Z
+[EVENT] End epoch          : 1787267552
+[EVENT] End UTC            : 2026-08-20T23:12:32Z
+[EVENT] Duration           : 241 seconds
+[EVENT] Generated records  : 4
+[EVENT] Stored checksum    : 0xCE99D3A4
+[EVENT] Calculated checksum: 0xCE99D3A4
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 16
+[EVENT] Start epoch        : 1787267596
+[EVENT] Start UTC          : 2026-08-20T23:13:16Z
+[EVENT] End epoch          : 1787267647
+[EVENT] End UTC            : 2026-08-20T23:14:07Z
+[EVENT] Duration           : 51 seconds
+[EVENT] Generated records  : 1
+[EVENT] Stored checksum    : 0x9FA26903
+[EVENT] Calculated checksum: 0x9FA26903
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+------------------------------------------------------------
+[EVENT] ID                 : 17
+[EVENT] Start epoch        : 1787270001
+[EVENT] Start UTC          : 2026-08-20T23:53:21Z
+[EVENT] End epoch          : 1787270112
+[EVENT] End UTC            : 2026-08-20T23:55:12Z
+[EVENT] Duration           : 111 seconds
+[EVENT] Generated records  : 2
+[EVENT] Stored checksum    : 0xD29092E7
+[EVENT] Calculated checksum: 0xD29092E7
+[EVENT] Checksum           : PASS
+[EVENT] Structure          : PASS
+[EVENT] Event sequence     : PASS
+[EVENT] INTEGRITY          : PASS
+
+============================================================
+ JOURNAL SUMMARY
+============================================================
+Complete journal records : 17
+Valid journal records    : 17
+Invalid journal records  : 0
+Generated offline total  : 213
+Offline time total       : 14778 seconds
+Journal integrity result : PASS
+
+============================================================
+ PENDING FIFO CACHE — READ ONLY
+============================================================
+[FIFO] File size       : 176 bytes
+[FIFO] Record size     : 176 bytes
+[FIFO] Complete records: 1
+
+------------------------------------------------------------
+[FIFO] Record index    : 0
+[FIFO] Magic            : 0x50454E44
+[FIFO] Sequence         : 928
+[FIFO] Timestamp        : 1787275201
+[FIFO] Timestamp UTC    : 2026-08-21T01:20:01Z
+[FIFO] Payload          : 4942966185717008576
+[FIFO] Payload HEX      : 0x4498F18E946E08C0
+[FIFO] Previous hash    : e4b9c93915f857357de70655f3777d87781f8c3b64d704dc6d682deebb5ba02c
+[FIFO] Block hash       : f912e31ef0b12e77e1570d53bf2774709378884a19e58ad97f478a667596d5c2
+[FIFO] STRUCTURE        : VALID
+[FIFO] SHA-256          : PASS
+
+============================================================
+ FIFO SUMMARY
+============================================================
+Complete records : 1
+Valid structures : 1
+Valid SHA-256     : 1
+
+NOTE:
+If this file is absent, it may simply mean that all
+cached records were already replayed and removed.
+Therefore FIFO absence alone cannot prove that no
+offline caching occurred.
+
+============================================================
+ RAW PREVIEW: /agro_offline_state.bin
+============================================================
+0000: 32 53 46 4F 01 00 00 00 01 00 00 00 12 00 00 00 C1 A7 87 6A 00 00 00 00 01 00 00 00 3B AC 0F 7C 
+Previewed 32 / 32 bytes.
+
+============================================================
+ RAW PREVIEW: /agro_offline_events.bin
+============================================================
+0000: 56 45 46 4F 01 00 00 00 01 00 00 00 00 00 00 00 A4 45 87 6A 00 00 00 00 36 46 87 6A 00 00 00 00 02 00 00 00 00 00 00 00 92 00 00 00 00 00 00 00 DC 1C D3 32 00 00 00 00 56 45 46 4F 01 00 00 00 02 00 00 00 00 00 00 00 C4 4A 87 6A 00 00 00 00 29 4B 87 6A 00 00 00 00 02 00 00 00 00 00 00 00 65 00 00 00 00 00 00 00 85 2C 7F B4 00 00 00 00 56 45 46 4F 01 00 00 00 03 00 00 00 00 00 00 00 7B 4B 87 6A 00 00 00 00 0A 59 87 6A 00 00 00 00 48 00 00 00 00 00 00 00 8F 0D 00 00 00 00 00 00 AA 48 B0 1C 00 00 00 00 56 45 46 4F 01 00 00 00 04 00 00 00 00 00 00 00 D8 5A 87 6A 00 00 00 00 06 5B 87 6A 00 00 00 00 01 00 00 00 00 00 00 00 2E 00 00 00 00 00 00 00 A4 E7 47 A1 00 00 00 00 56 45 46 4F 01 00 00 00 05 00 00 00 00 00 00 00 B5 5C 87 6A 00 00 00 00 C8 62 87 6A 00 00 00 00 
+Previewed 256 / 952 bytes.
+
+============================================================
+ RAW PREVIEW: /agro_pending.bin
+============================================================
+0000: 44 4E 45 50 00 00 00 00 A0 03 00 00 00 00 00 00 C1 A7 87 6A 00 00 00 00 C0 08 6E 94 8E F1 98 44 66 39 31 32 65 33 31 65 66 30 62 31 32 65 37 37 65 31 35 37 30 64 35 33 62 66 32 37 37 34 37 30 39 33 37 38 38 38 34 61 31 39 65 35 38 61 64 39 37 66 34 37 38 61 36 36 37 35 39 36 64 35 63 32 00 00 00 00 00 00 00 00 65 34 62 39 63 39 33 39 31 35 66 38 35 37 33 35 37 64 65 37 30 36 35 35 66 33 37 37 37 64 38 37 37 38 31 66 38 63 33 62 36 34 64 37 30 34 64 63 36 64 36 38 32 64 65 65 62 62 35 62 61 30 32 63 00 00 00 00 00 00 00 00 
+Previewed 176 / 176 bytes.
+
+################################################################
+# FINAL FORENSIC SUMMARY                                      #
+################################################################
+Offline state checksum : PASS
+Offline journal        : PASS
+Pending FIFO read      : PASS
+
+IMPORTANT INTERPRETATION:
+A corrected journal PASS means the stored V2.2 event records
+are internally consistent according to the firmware checksum.
+It does NOT by itself prove gateway synchronization.
+That must be cross-checked against RPi4/DuckDB records.
+
+Save the COMPLETE Serial Monitor output.
+Do not upload the original deployment firmware again until
+this forensic output has been saved.
+
+################################################################
+# FORENSIC READ-ONLY COMPLETE                                #
+################################################################
+DATA seq=1 mode=BASE_30S ESPraw=0 ESPmV=142 ADSraw=21655 ADSV=2.70688 soilProxy=100.00 airT=30.87 RH=32.39 P=1003.91 lux=6.67 WiFi=-127 sent=0 flags=ESP_ADC_EDGE;SOIL_TEMP_INVALID;
+DATA seq=2 mode=BASE_30S ESPraw=0 ESPmV=142 ADSraw=21666 ADSV=2.70825 soilProxy=100.00 airT=31.04 RH=32.01 P=1003.90 lux=6.67 WiFi=-127 sent=0 flags=ESP_ADC_EDGE;
+DATA seq=3 mode=BASE_30S ESPraw=0 ESPmV=142 ADSraw=21671 ADSV=2.70888 soilProxy=100.00 airT=31.10 RH=32.05 P=1003.91 lux=6.67 WiFi=-127 sent=0 flags=ESP_ADC_EDGE;

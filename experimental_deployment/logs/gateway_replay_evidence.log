@@ -1,0 +1,80 @@
+AgroDBhive V2.2 — Gateway replay evidence
+Source: archived gateway/ESP32 deployment log
+Purpose: concise evidence excerpt for GitHub reproducibility.
+
+The complete source log was not copied into the public validation folder
+because it contains historical/mixed-session material. This excerpt retains
+the relevant replay sequence evidence.
+
+================================================
+[CACHE] Pending blocks: 5
+[CACHE] Queue head offset: 0
+
+[REPLAY] Replaying cached block...
+[REPLAY] Sequence: 12
+[REPLAY] Timestamp: 1770005320
+[REPLAY] Previous hash: 0e1aad79c57f25d9102ef564319fcd9ce30b8030e5df8d160f38b065aca9d8ed
+[REPLAY] Hash: df05c9ea36654730a04ce48f3764c26681252322f098cd1de9495a47352bb7cd
+[NETWORK] JSON payload:
+{"timestamp":1770005320,"node_id":1,"payload":"4717727927053979139","hash_signature":"df05c9ea36654730a04ce48f3764c26681252322f098cd1de9495a47352bb7cd","execution_ms":3555,"free_heap_bytes":213812,"wifi_rssi_dbm":-48}
+[NETWORK] HTTP code: -1
+[REPLAY] Gateway did not accept cached block. HTTP: -1
+[REPLAY] Pending block retained for next cycle.
+[INTERMITTENT] Replay incomplete.
+[POWER] Preparing deep sleep...
+[POWER] Sleep duration: 35 seconds
+ets Jul 29 2019 12:21:46
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+{"timestamp":1770005320,"node_id":1,"payload":"4717727927053979139","hash_signature":"df05c9ea36654730a04ce48f3764c26681252322f098cd1de9495a47352bb7cd","execution_ms":3555,"free_heap_bytes":213812,"wifi_rssi_dbm":-52}
+[NETWORK] HTTP code: 200
+[NETWORK] Gateway response:
+{"status":"success","message":"Experimental telemetry block verified and committed successfully.","node_id":1,"timestamp":1770005320,"payload_bits":64,"payload_decimal":"4717727927053979139","payload_hex":"0x4178BC8DD6FE0E03","hash_signature":"df05c9ea36654730a04ce48f3764c26681252322f098cd1de9495a47352bb7cd"}
+[REPLAY] HTTP 200.
+[REPLAY] Cached block committed by gateway.
+[STATE] Persistent state saved.
+[REPLAY] Remaining pending blocks: 4
+[REPLAY] Sequence: 13
+[REPLAY] Timestamp: 1770005355
+[REPLAY] Previous hash: df05c9ea36654730a04ce48f3764c26681252322f098cd1de9495a47352bb7cd
+[REPLAY] Hash: 9625b072eb943418460e2d94ca168e3a7f03bd7515ed06fa9cda14fad1af1f70
+{"timestamp":1770005355,"node_id":1,"payload":"4717727927055027715","hash_signature":"9625b072eb943418460e2d94ca168e3a7f03bd7515ed06fa9cda14fad1af1f70","execution_ms":4418,"free_heap_bytes":213048,"wifi_rssi_dbm":-51}
+[CACHE] Pending blocks: 4
+[CACHE] Queue head offset: 176
+{"timestamp":1770005355,"node_id":1,"payload":"4717727927055027715","hash_signature":"9625b072eb943418460e2d94ca168e3a7f03bd7515ed06fa9cda14fad1af1f70","execution_ms":3560,"free_heap_bytes":213812,"wifi_rssi_dbm":-49}
+{"status":"success","message":"Experimental telemetry block verified and committed successfully.","node_id":1,"timestamp":1770005355,"payload_bits":64,"payload_decimal":"4717727927055027715","payload_hex":"0x4178BC8DD70E0E03","hash_signature":"9625b072eb943418460e2d94ca168e3a7f03bd7515ed06fa9cda14fad1af1f70"}
+[REPLAY] Remaining pending blocks: 3
+[REPLAY] Sequence: 14
+[REPLAY] Timestamp: 1770005390
+[REPLAY] Previous hash: 9625b072eb943418460e2d94ca168e3a7f03bd7515ed06fa9cda14fad1af1f70
+[REPLAY] Hash: 3fde2c278ae075d7cf5d4f1617b1da29dc01052fba8148a79a3286a4f76f3706
+{"timestamp":1770005390,"node_id":1,"payload":"4713226526448815619","hash_signature":"3fde2c278ae075d7cf5d4f1617b1da29dc01052fba8148a79a3286a4f76f3706","execution_ms":6867,"free_heap_bytes":213232,"wifi_rssi_dbm":-50}
+{"status":"success","message":"Experimental telemetry block verified and committed successfully.","node_id":1,"timestamp":1770005390,"payload_bits":64,"payload_decimal":"4713226526448815619","payload_hex":"0x4168BE8DD6EE0E03","hash_signature":"3fde2c278ae075d7cf5d4f1617b1da29dc01052fba8148a79a3286a4f76f3706"}
+[REPLAY] Remaining pending blocks: 2
+[REPLAY] Sequence: 15
+[REPLAY] Timestamp: 1770005425
+[REPLAY] Previous hash: 3fde2c278ae075d7cf5d4f1617b1da29dc01052fba8148a79a3286a4f76f3706
+[REPLAY] Hash: f494f55553b8701ab38a5e2ba83fe3d769895b13817fc82d75a9eff8b1dcab20
+{"timestamp":1770005425,"node_id":1,"payload":"4717730126076186115","hash_signature":"f494f55553b8701ab38a5e2ba83fe3d769895b13817fc82d75a9eff8b1dcab20","execution_ms":7338,"free_heap_bytes":212968,"wifi_rssi_dbm":-50}
+{"status":"success","message":"Experimental telemetry block verified and committed successfully.","node_id":1,"timestamp":1770005425,"payload_bits":64,"payload_decimal":"4717730126076186115","payload_hex":"0x4178BE8DD6EE0E03","hash_signature":"f494f55553b8701ab38a5e2ba83fe3d769895b13817fc82d75a9eff8b1dcab20"}
+[REPLAY] Remaining pending blocks: 1
+[REPLAY] Sequence: 16
+[REPLAY] Timestamp: 1770005460
+[REPLAY] Previous hash: f494f55553b8701ab38a5e2ba83fe3d769895b13817fc82d75a9eff8b1dcab20
+[REPLAY] Hash: 18803054531e2dbdeb14f5819f6815db0947c96b7519592a2d9573e483dc5126
+{"timestamp":1770005460,"node_id":1,"payload":"4717730126074089027","hash_signature":"18803054531e2dbdeb14f5819f6815db0947c96b7519592a2d9573e483dc5126","execution_ms":7838,"free_heap_bytes":212704,"wifi_rssi_dbm":-49}
+{"status":"success","message":"Experimental telemetry block verified and committed successfully.","node_id":1,"timestamp":1770005460,"payload_bits":64,"payload_decimal":"4717730126074089027","payload_hex":"0x4178BE8DD6CE0E43","hash_signature":"18803054531e2dbdeb14f5819f6815db0947c96b7519592a2d9573e483dc5126"}
+[REPLAY] Remaining pending blocks: 0
+[REPLAY] SUCCESS: offline queue is empty.
+ EXPERIMENTAL SENSOR ACQUISITION
+[SOIL MOISTURE]
+ADC raw      : 21891
+Voltage      : 2.7364 V
+Moisture     : 25.62 %
+STATUS       : VALID
+[DS18B20 SOIL TEMPERATURE]
+Temperature  : 28.31 C
+[BME280]
+Air temp     : 29.28 C
+Humidity     : 36.01 %
+Pressure     : 1002.79 hPa

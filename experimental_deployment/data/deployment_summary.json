@@ -1,0 +1,22 @@
+{
+  "experiment": "AgroDBhive Physical Experimental Deployment",
+  "firmware": "V2.2",
+  "reported_deployment_duration": "8-9 h",
+  "sampling_sleep_seconds": 35,
+  "payload_bits": 64,
+  "offline_event_records": 17,
+  "offline_generated_records": 213,
+  "offline_journal_duration_seconds": 14778,
+  "offline_journal_duration_hours": 4.105,
+  "gateway_records_attributed_to_experimental_session": 886,
+  "database_offline_count_inclusive_boundary_check": 215,
+  "duplicate_timestamps": 0,
+  "duplicate_hashes": 0,
+  "chain_inconsistencies": 0,
+  "offline_state_checksum": "PASS",
+  "offline_journal_checksum": "PASS",
+  "pending_fifo_structure": "VALID",
+  "pending_fifo_sha256": "PASS",
+  "overall_integrity": "PASS",
+  "interpretation_note": "The 8-9 h value is the reported deployment-session duration. The 17 journaled outage intervals sum to 14778 s (4.105 h) and therefore must not be presented as the total deployment duration."
+}

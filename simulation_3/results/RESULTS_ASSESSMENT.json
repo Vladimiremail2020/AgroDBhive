@@ -1,0 +1,22 @@
+{
+  "assessment": "valid implementation-level benchmark with validated InfluxDB query",
+  "platform": "Raspberry Pi 4",
+  "repetitions": 5,
+  "influx_query_validation": {
+    "all_runs_query_rows": 6,
+    "status": "passed"
+  },
+  "key_metrics": {
+    "agro_ingest_vs_duck_ratio": 1.8273721020278695,
+    "agro_query_increase_percent": 18.007371734409674,
+    "storage_reduction_percent": 64.07119021134594,
+    "influx_storage": "not measured"
+  },
+  "limitations": [
+    "Single Raspberry Pi 4 platform and one synthetic workload.",
+    "Only five measured repetitions.",
+    "InfluxDB storage is not measured.",
+    "InfluxDB query uses a Flux pivot/group/reduce pipeline and should not be interpreted as a universal database ranking.",
+    "RAM/CPU measurements are process-level and not perfectly apples-to-apples across embedded and server architectures."
+  ]
+}

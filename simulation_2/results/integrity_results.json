@@ -1,0 +1,18 @@
+{
+  "simulation": "Simulation 2",
+  "platform": "Raspberry Pi 4 / Reference Hardware",
+  "dataset_seed": 20260811,
+  "total_records_evaluated": 4320,
+  "chain_originally_valid": true,
+  "verification_latency_ms": 279.6,
+  "attack_detection_results": {
+    "payload_modification_detected": true,
+    "reorder_attack_detected": true,
+    "deletion_attack_detected": true,
+    "injection_attack_detected": true,
+    "node_spoofing_detected": true,
+    "timestamp_tampering_detected": true
+  },
+  "detected_attack_classes": 6,
+  "total_attack_classes": 6
+}

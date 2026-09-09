@@ -1,0 +1,4 @@
+{
+  "caption": "Irrigation alarm counts by node",
+  "description": "Bar chart of irrigation alarm events per simulated sensor node."
+}

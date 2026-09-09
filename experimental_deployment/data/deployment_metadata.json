@@ -1,0 +1,59 @@
+{
+  "experiment": "AgroDBhive Physical Experimental Deployment",
+  "firmware_version": "V2.2",
+  "time_reference": "UTC",
+  "deployment_duration_reported": "8-9 h",
+  "edge_device": "ESP32",
+  "gateway": "Raspberry Pi 4",
+  "communication": {
+    "protocol": "HTTP",
+    "mode": "intermittent connectivity"
+  },
+  "sensors": {
+    "soil_moisture": "capacitive sensor via ADS1115",
+    "soil_temperature": "DS18B20",
+    "air_environment": "BME280",
+    "light": "BH1750"
+  },
+  "interfaces": {
+    "i2c_sda": "GPIO21",
+    "i2c_scl": "GPIO22",
+    "i2c_clock_hz": 100000,
+    "ads1115_address": "0x48",
+    "bme280_address": "0x76",
+    "bh1750_address": "0x23",
+    "ds18b20_gpio": 27
+  },
+  "power_cycle": {
+    "deep_sleep_seconds": 35
+  },
+  "payload": {
+    "width_bits": 64,
+    "layout": {
+      "soil_moisture": 12,
+      "soil_temperature": 12,
+      "air_temperature": 10,
+      "humidity": 10,
+      "pressure": 14,
+      "light": 6
+    }
+  },
+  "cryptography": {
+    "algorithm": "SHA-256",
+    "hash_input_bytes": 84,
+    "input_layout": [
+      "timestamp: 8 bytes little-endian",
+      "node_id: 4 bytes little-endian",
+      "previous_hash: 64 ASCII bytes",
+      "payload: 8 bytes little-endian"
+    ]
+  },
+  "storage": {
+    "filesystem": "LittleFS",
+    "offline_state_file": "/agro_offline_state.bin",
+    "offline_event_file": "/agro_offline_events.bin",
+    "pending_fifo_file": "/agro_pending.bin",
+    "offline_event_record_bytes": 56,
+    "pending_record_bytes": 176
+  }
+}

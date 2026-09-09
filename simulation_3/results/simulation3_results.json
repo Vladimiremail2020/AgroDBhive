@@ -1,0 +1,440 @@
+{
+  "simulation": "Simulation 3 v3",
+  "benchmark_status": "measured",
+  "platform": "Linux-6.18.34+rpt-rpi-v8-aarch64-with-glibc2.41",
+  "machine": "aarch64",
+  "python_version": "3.13.5",
+  "duckdb_version": "1.5.2",
+  "dataset": {
+    "rows": 100000,
+    "nodes": 6,
+    "seed": 20260811,
+    "sampling_interval_seconds": 300
+  },
+  "payload": {
+    "storage_bits": 64,
+    "used_bits": 59,
+    "reserved_bits": 5,
+    "layout": {
+      "temperature": 14,
+      "humidity": 14,
+      "light": 17,
+      "moisture": 14
+    }
+  },
+  "warmup_excluded": true,
+  "repetitions": 5,
+  "cache_clear_requested": true,
+  "duckdb": {
+    "ingest_rps": {
+      "mean": 209650.33548155485,
+      "sd": 58357.34908487626,
+      "min": 123816.86730540943,
+      "max": 257872.66951134944,
+      "runs": [
+        241458.65715627934,
+        123816.86730540943,
+        250636.7608612309,
+        257872.66951134944,
+        174466.72257350522
+      ]
+    },
+    "query_latency_ms": {
+      "mean": 8.596887000021525,
+      "sd": 0.13157341358315022,
+      "min": 8.424981999269221,
+      "max": 8.730199999263277,
+      "runs": [
+        8.424981999269221,
+        8.730199999263277,
+        8.67325600120239,
+        8.665682000355446,
+        8.49031500001729
+      ]
+    },
+    "storage_mb": {
+      "mean": 3.51171875,
+      "sd": 0.0,
+      "min": 3.51171875,
+      "max": 3.51171875,
+      "runs": [
+        3.51171875,
+        3.51171875,
+        3.51171875,
+        3.51171875,
+        3.51171875
+      ]
+    },
+    "ram_mb": {
+      "mean": 148.38046875,
+      "sd": 5.327466710388059,
+      "min": 138.91015625,
+      "max": 151.15625,
+      "runs": [
+        149.71875,
+        138.91015625,
+        151.05078125,
+        151.06640625,
+        151.15625
+      ]
+    },
+    "cpu_percent_one_core": {
+      "mean": 54.40612404009776,
+      "sd": 25.450106302248575,
+      "min": 22.28703611497366,
+      "max": 92.46736296395797,
+      "runs": [
+        50.706318002818435,
+        22.28703611497366,
+        60.15282260669591,
+        46.41708051204282,
+        92.46736296395797
+      ]
+    }
+  },
+  "agrodbhive": {
+    "ingest_rps": {
+      "mean": 383109.1742397769,
+      "sd": 174904.06134099897,
+      "min": 191968.040669176,
+      "max": 550554.6777820863,
+      "runs": [
+        485389.6360439112,
+        195082.57879714432,
+        550554.6777820863,
+        492550.9379065667,
+        191968.040669176
+      ]
+    },
+    "query_latency_ms": {
+      "mean": 10.14496039970254,
+      "sd": 0.09400675745327586,
+      "min": 10.026048001236632,
+      "max": 10.268635998727405,
+      "runs": [
+        10.100749999764957,
+        10.204562999206246,
+        10.268635998727405,
+        10.026048001236632,
+        10.124804999577464
+      ]
+    },
+    "storage_mb": {
+      "mean": 1.26171875,
+      "sd": 0.0,
+      "min": 1.26171875,
+      "max": 1.26171875,
+      "runs": [
+        1.26171875,
+        1.26171875,
+        1.26171875,
+        1.26171875,
+        1.26171875
+      ]
+    },
+    "ram_mb": {
+      "mean": 146.53203125,
+      "sd": 1.3960059823069235,
+      "min": 145.05859375,
+      "max": 148.28515625,
+      "runs": [
+        147.28515625,
+        146.8671875,
+        145.05859375,
+        145.1640625,
+        148.28515625
+      ]
+    },
+    "cpu_percent_one_core": {
+      "mean": 56.155111575155566,
+      "sd": 24.68201198194021,
+      "min": 19.19680406691787,
+      "max": 82.58320166731215,
+      "runs": [
+        48.53896360439181,
+        56.57394785117169,
+        82.58320166731215,
+        73.8826406859843,
+        19.19680406691787
+      ]
+    },
+    "temperature_mae": {
+      "mean": 0.0024993134081684985,
+      "sd": 0.0,
+      "min": 0.0024993134081684985,
+      "max": 0.0024993134081684985,
+      "runs": [
+        0.0024993134081684985,
+        0.0024993134081684985,
+        0.0024993134081684985,
+        0.0024993134081684985,
+        0.0024993134081684985
+      ]
+    },
+    "hash_us_per_word": {
+      "mean": 5.174774953993619,
+      "sd": 0.04203877925868973,
+      "min": 5.1209152699993865,
+      "max": 5.22123806998934,
+      "runs": [
+        5.1431566099927295,
+        5.22123806998934,
+        5.205430229998456,
+        5.1209152699993865,
+        5.183134589988185
+      ]
+    }
+  },
+  "influxdb": {
+    "ingest_rps": {
+      "mean": 10102.167073902805,
+      "sd": 344.7242861535943,
+      "min": 9727.783415225744,
+      "max": 10539.993028068027,
+      "runs": [
+        9958.283746586147,
+        10386.873634562742,
+        9897.901545071365,
+        9727.783415225744,
+        10539.993028068027
+      ]
+    },
+    "query_latency_ms": {
+      "mean": 7721.300703999805,
+      "sd": 17.235692636530953,
+      "min": 7704.644153998743,
+      "max": 7739.113322000776,
+      "runs": [
+        7704.644153998743,
+        7739.052635000917,
+        7739.113322000776,
+        7704.787699000008,
+        7718.90570999858
+      ]
+    },
+    "storage_mb": null,
+    "ram_mb": {
+      "mean": 205.60546875,
+      "sd": 3.3336004785935143,
+      "min": 200.92578125,
+      "max": 208.796875,
+      "runs": [
+        200.92578125,
+        203.33984375,
+        207.7890625,
+        207.17578125,
+        208.796875
+      ]
+    },
+    "cpu_percent_one_core": {
+      "mean": 32.80818192633816,
+      "sd": 1.2828925029258447,
+      "min": 31.128794948045766,
+      "max": 34.676448263835354,
+      "runs": [
+        33.16090374404033,
+        32.5107884114429,
+        32.56397426432643,
+        31.128794948045766,
+        34.676448263835354
+      ]
+    },
+    "storage_measurement": "InfluxDB data-directory delta"
+  },
+  "raw_runs": [
+    {
+      "rep": 1,
+      "duckdb": {
+        "elapsed_seconds": 0.4141495740004757,
+        "ingest_rps": 241458.65715627934,
+        "ram_mb": 149.71875,
+        "rss_delta_mb": 15.8671875,
+        "cpu_percent_one_core": 50.706318002818435,
+        "query_latency_ms": 8.424981999269221,
+        "storage_mb": 3.51171875,
+        "query_rows": 6
+      },
+      "agrodbhive": {
+        "elapsed_seconds": 0.2060200560008525,
+        "ingest_rps": 485389.6360439112,
+        "ram_mb": 147.28515625,
+        "rss_delta_mb": 12.96875,
+        "cpu_percent_one_core": 48.53896360439181,
+        "query_latency_ms": 10.100749999764957,
+        "storage_mb": 1.26171875,
+        "query_rows": 6,
+        "temperature_mae": 0.0024993134081684985
+      },
+      "hash_us_per_word": 5.1431566099927295,
+      "influxdb": {
+        "ingest_seconds": 10.041891007000231,
+        "ingest_rps": 9958.283746586147,
+        "query_latency_ms": 7704.644153998743,
+        "storage_mb": null,
+        "ram_mb": 200.92578125,
+        "cpu_percent_one_core": 33.16090374404033,
+        "server_process_found": true,
+        "query_rows": 6,
+        "storage_measured": false,
+        "storage_measurement": "not measured",
+        "query_valid": true
+      }
+    },
+    {
+      "rep": 2,
+      "duckdb": {
+        "elapsed_seconds": 0.8076444039998023,
+        "ingest_rps": 123816.86730540943,
+        "ram_mb": 138.91015625,
+        "rss_delta_mb": 3.59375,
+        "cpu_percent_one_core": 22.28703611497366,
+        "query_latency_ms": 8.730199999263277,
+        "storage_mb": 3.51171875,
+        "query_rows": 6
+      },
+      "agrodbhive": {
+        "elapsed_seconds": 0.5126034349996189,
+        "ingest_rps": 195082.57879714432,
+        "ram_mb": 146.8671875,
+        "rss_delta_mb": 11.59765625,
+        "cpu_percent_one_core": 56.57394785117169,
+        "query_latency_ms": 10.204562999206246,
+        "storage_mb": 1.26171875,
+        "query_rows": 6,
+        "temperature_mae": 0.0024993134081684985
+      },
+      "hash_us_per_word": 5.22123806998934,
+      "influxdb": {
+        "ingest_seconds": 9.62753601499935,
+        "ingest_rps": 10386.873634562742,
+        "query_latency_ms": 7739.052635000917,
+        "storage_mb": null,
+        "ram_mb": 203.33984375,
+        "cpu_percent_one_core": 32.5107884114429,
+        "server_process_found": true,
+        "query_rows": 6,
+        "storage_measured": false,
+        "storage_measurement": "not measured",
+        "query_valid": true
+      }
+    },
+    {
+      "rep": 3,
+      "duckdb": {
+        "elapsed_seconds": 0.3989837710014399,
+        "ingest_rps": 250636.7608612309,
+        "ram_mb": 151.05078125,
+        "rss_delta_mb": 14.39453125,
+        "cpu_percent_one_core": 60.15282260669591,
+        "query_latency_ms": 8.67325600120239,
+        "storage_mb": 3.51171875,
+        "query_rows": 6
+      },
+      "agrodbhive": {
+        "elapsed_seconds": 0.18163500199989357,
+        "ingest_rps": 550554.6777820863,
+        "ram_mb": 145.05859375,
+        "rss_delta_mb": 9.7265625,
+        "cpu_percent_one_core": 82.58320166731215,
+        "query_latency_ms": 10.268635998727405,
+        "storage_mb": 1.26171875,
+        "query_rows": 6,
+        "temperature_mae": 0.0024993134081684985
+      },
+      "hash_us_per_word": 5.205430229998456,
+      "influxdb": {
+        "ingest_seconds": 10.103151617000549,
+        "ingest_rps": 9897.901545071365,
+        "query_latency_ms": 7739.113322000776,
+        "storage_mb": null,
+        "ram_mb": 207.7890625,
+        "cpu_percent_one_core": 32.56397426432643,
+        "server_process_found": true,
+        "query_rows": 6,
+        "storage_measured": false,
+        "storage_measurement": "not measured",
+        "query_valid": true
+      }
+    },
+    {
+      "rep": 4,
+      "duckdb": {
+        "elapsed_seconds": 0.38778828399881604,
+        "ingest_rps": 257872.66951134944,
+        "ram_mb": 151.06640625,
+        "rss_delta_mb": 15.77734375,
+        "cpu_percent_one_core": 46.41708051204282,
+        "query_latency_ms": 8.665682000355446,
+        "storage_mb": 3.51171875,
+        "query_rows": 6
+      },
+      "agrodbhive": {
+        "elapsed_seconds": 0.2030246869999246,
+        "ingest_rps": 492550.9379065667,
+        "ram_mb": 145.1640625,
+        "rss_delta_mb": 9.7890625,
+        "cpu_percent_one_core": 73.8826406859843,
+        "query_latency_ms": 10.026048001236632,
+        "storage_mb": 1.26171875,
+        "query_rows": 6,
+        "temperature_mae": 0.0024993134081684985
+      },
+      "hash_us_per_word": 5.1209152699993865,
+      "influxdb": {
+        "ingest_seconds": 10.279834134000339,
+        "ingest_rps": 9727.783415225744,
+        "query_latency_ms": 7704.787699000008,
+        "storage_mb": null,
+        "ram_mb": 207.17578125,
+        "cpu_percent_one_core": 31.128794948045766,
+        "server_process_found": true,
+        "query_rows": 6,
+        "storage_measured": false,
+        "storage_measurement": "not measured",
+        "query_valid": true
+      }
+    },
+    {
+      "rep": 5,
+      "duckdb": {
+        "elapsed_seconds": 0.5731752079991566,
+        "ingest_rps": 174466.72257350522,
+        "ram_mb": 151.15625,
+        "rss_delta_mb": 16.01953125,
+        "cpu_percent_one_core": 92.46736296395797,
+        "query_latency_ms": 8.49031500001729,
+        "storage_mb": 3.51171875,
+        "query_rows": 6
+      },
+      "agrodbhive": {
+        "elapsed_seconds": 0.5209200429999328,
+        "ingest_rps": 191968.040669176,
+        "ram_mb": 148.28515625,
+        "rss_delta_mb": 12.97265625,
+        "cpu_percent_one_core": 19.19680406691787,
+        "query_latency_ms": 10.124804999577464,
+        "storage_mb": 1.26171875,
+        "query_rows": 6,
+        "temperature_mae": 0.0024993134081684985
+      },
+      "hash_us_per_word": 5.183134589988185,
+      "influxdb": {
+        "ingest_seconds": 9.487672310000562,
+        "ingest_rps": 10539.993028068027,
+        "query_latency_ms": 7718.90570999858,
+        "storage_mb": null,
+        "ram_mb": 208.796875,
+        "cpu_percent_one_core": 34.676448263835354,
+        "server_process_found": true,
+        "query_rows": 6,
+        "storage_measured": false,
+        "storage_measurement": "not measured",
+        "query_valid": true
+      }
+    }
+  ],
+  "derived": {
+    "agrodbhive_storage_change_vs_duckdb_percent": -64.07119021134594,
+    "agrodbhive_storage_reduction_vs_duckdb_percent": 64.07119021134594
+  }
+}

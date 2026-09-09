@@ -1,0 +1,4 @@
+{
+  "caption": "Average soil moisture across simulated nodes",
+  "description": "Line chart of average soil moisture over the first 300 timestamps in the synthetic multi-node simulation."
+}
