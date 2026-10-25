@@ -61,8 +61,25 @@ Install the required environment dependencies before initiating data extraction 
 pip install -r simulation_1/requirements.txt
 ```
 
-### Reproducing Benchmark Analysis
-To run the performance metrics infrastructure within the engine suite, execute:
+### Reproducing Simulation 3
+
+Install dependencies:
+
 ```bash
-python simulation_3/simulation3_v3_1.py
+python -m pip install -r simulation_3/requirements.txt
 ```
+
+Generate the synthetic dataset:
+
+```bash
+python simulation_3/simulation3_v3_1.py generate --rows 100000 --nodes 6 --seed 20260811 --interval 300 --out simulation_3/artifacts/dataset_100k.csv
+```
+
+Run the benchmark against a running InfluxDB instance:
+
+```bash
+python simulation_3/simulation3_v3_1.py benchmark --dataset simulation_3/artifacts/dataset_100k.csv --out simulation_3/results/reproduced --seed 20260811 --interval 300 --repetitions 5 --warmup --clear-cache --influx-url "\$INFLUX_URL" --influx-token "\(INFLUX_TOKEN" --influx-org "\)INFLUX_ORG" --influx-batch-size 1000
+```
+
+Set `INFLUX_URL`, `INFLUX_TOKEN`, and `INFLUX_ORG` in the local environment before running the InfluxDB benchmark. Never commit credentials. The benchmark requires a running, appropriately configured InfluxDB instance.
+
