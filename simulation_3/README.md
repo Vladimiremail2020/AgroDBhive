@@ -17,6 +17,7 @@ Simulation 3 benchmarks AgroDBhive against DuckDB and InfluxDB on a Raspberry Pi
 - Statistics: mean ± sample SD
 - Cache clearing: requested during the benchmark
 - AgroDBhive payload: 64 bits, 59 used bits + 5 reserved bits
+- This 4-field benchmark layout is specific to Simulation 3 and differs from both the five-variable Simulation 1 layout and the physical firmware layout documented under experimental_deployment/firmware/.
 - InfluxDB timestamps: explicitly written with `WritePrecision.S`
 - InfluxDB query validation: each run required 6 node-level output rows
 
