@@ -33,7 +33,7 @@ Two verification modes are supported:
    `pip install -r requirements.txt`
 
 2. Run a simulation:
-   `python simulation.py --seed 42 --output_dir results/run_seed_42`
+   `python simulation_1.py --seed 42 --output_dir results/run_seed_42`
 
 3. Inspect the generated outputs in the selected results folder.
 
