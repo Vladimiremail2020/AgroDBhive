@@ -17,10 +17,14 @@ The repository is organized into four core pillars, each representing a distinct
   * `figures/`: Graphical charts depicting Mean Absolute Error (MAE) metrics for soil moisture, air temperature, and humidity, alongside automated irrigation alarm triggers.
   * `paper_snippets/`: Generated LaTeX (`.tex`) structural tables and mathematical data blocks formatted directly for academic publication.
 
-### 2. `simulation_2` — Data Compaction & Storage Efficiency
-* **Purpose**: Measures the bit-packing framework's exact compression performance compared to standard storage architectures.
-* **Key Components**:
-  * Focuses on the 64-bit layout distribution schema (`soil_moisture: 10b`, `air_temp: 11b`, `air_humidity: 10b`, `pressure: 14b`, `light_lux: 19b`) and storage footprint evaluation.
+### 2. `simulation_2` — SHA-256 Hash-Chain Integrity and Tamper Detection
+* **Purpose**: Evaluates whether the implemented SHA-256 hash-chain verification detects six predefined tampering scenarios in a synthetic dataset.
+* **Configuration**: Six node-specific chains, 720 records per node, and 4,320 records in total.
+* **Attack Scenarios**: Payload modification, record reordering, record deletion, record injection, node-ID modification, and timestamp tampering.
+* **Outputs**: `results/integrity_results.json`, containing baseline verification latency and the outcomes of the six implemented scenarios.
+
+> [!NOTE]
+> The reported latency is the time required to verify the complete unmodified chain. It is not a per-attack detection time. The experiment evaluates the specified tampering scenarios and does not establish protection against every possible attack.
 
 ### 3. `simulation_3` — Performance & Runtime Benchmarking
 * **Purpose**: Contains isolated stress-testing and processing performance counters.
