@@ -42,6 +42,8 @@ been redacted. The algorithmic and storage logic is preserved.
 
 Do not publish private Wi-Fi credentials, tokens, or passwords.
 
+The physical firmware uses its own 64-bit layout: soil moisture (12 bits), soil temperature (12), air temperature (10), humidity (10), pressure (14), and light (6). This layout differs from the Simulation 1 and Simulation 3 payloads.
+
 ## Forensic validation
 
 `firmware/AgroDBhive_V2.2_Forensic_ReadOnly_Corrected.ino` is the corrected
